@@ -1,3 +1,7 @@
+
+因文件过于大，上传不了，可以直接从下载地址下载 
+   http://www.mobaishare.com/down/win-openclaw-v0.1.0.zip
+
 一个为 Windows 打包的 OpenClaw 桌面应用，目标是：**开箱即用、无需手动安装 Node / openclaw、数据完全在本地目录中可备份/迁移**。
 
 ---
