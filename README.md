@@ -1,6 +1,15 @@
-## OpenClaw Windows 桌面应用使用说明
+一个为 Windows 打包的 OpenClaw 桌面应用，目标是：**开箱即用、无需手动安装 Node / openclaw、数据完全在本地目录中可备份/迁移**。
 
-本文档说明如何使用打包好的 **OpenClaw Windows 桌面应用（便携版）**。
+---
+
+## 功能概览
+
+- **内置 OpenClaw Gateway 与 Node 运行时**（独立于系统环境）。
+- 双击 `OpenClaw.exe` 即可启动，自动打开 OpenClaw 控制台 UI。
+- 内置中文 UI 文案与帮助文档：
+  - `assets/help.html`：应用内“帮助文档”。
+  - `使用说明-OpenClaw桌面版.txt`：给最终用户的离线说明书。
+- 一键升级内置 OpenClaw 与 Node 的脚本：`升级内置OpenClaw环境.cmd`。
 
 ### 1. 获取与运行
 
