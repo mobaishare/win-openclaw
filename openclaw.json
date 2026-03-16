@@ -1,0 +1,65 @@
+{
+  "gateway": {
+    "port": 18789,
+    "bind": "loopback",
+    "mode": "local",
+    "auth": {
+      "mode": "none"
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-XXX",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat"
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "DeepSeek Reasoner"
+          }
+        ]
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "sk-xxxxxx",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat"
+          },
+          {
+            "id": "deepseek-reasoner",
+            "name": "DeepSeek Reasoner"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat"
+      },
+     
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  }
+}
